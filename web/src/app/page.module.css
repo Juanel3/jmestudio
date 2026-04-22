@@ -34,11 +34,11 @@
   gap: 28px;
   padding: 12px 28px 12px 22px;
   border-radius: 999px;
-  background: var(--glass);
-  background-color: var(--glass);
+  background: rgba(10, 12, 16, 0.42);
+  background-color: rgba(10, 12, 16, 0.42);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   justify-self: center;
   pointer-events: auto;
@@ -102,13 +102,21 @@
   width: 100%;
   padding: 12px 22px 12px 20px;
   border-radius: 999px;
-  background: var(--glass);
-  background-color: var(--glass);
+  background: rgba(10, 12, 16, 0.42);
+  background-color: rgba(10, 12, 16, 0.42);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   pointer-events: auto;
+}
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .nav,
+  .mobileBar {
+    background: rgba(10, 12, 16, 0.34);
+    background-color: rgba(10, 12, 16, 0.34);
+  }
 }
 
 @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
