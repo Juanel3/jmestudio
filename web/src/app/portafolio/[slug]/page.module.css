@@ -1,13 +1,13 @@
 .page {
-  --pf-pad-x: clamp(16px, 3vw, 32px);
+  --pf-pad-x: clamp(32px, 5vw, 56px);
   /* Cajas blancas (artículo + galería): un poco más anchas que antes (980px). */
-  --pf-card-max: 1040px;
+  --pf-card-max: 920px;
 
   min-height: 100vh;
   background: #ffffff;
   color: #0b0b0f;
   padding-bottom: clamp(40px, 8vw, 64px);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .hero {
@@ -54,7 +54,7 @@
 .heroTitle {
   margin: 0;
   max-width: min(100%, 44ch);
-  font-size: clamp(28px, 4.2vw, 44px);
+  font-size: clamp(24px, 3.4vw, 36px);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
@@ -65,7 +65,7 @@
 .heroSummary {
   margin: 18px 0 0;
   max-width: 46ch;
-  font-size: clamp(14px, 1.8vw, 16px);
+  font-size: clamp(12px, 1.4vw, 14px);
   line-height: 1.55;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.88);
@@ -84,7 +84,7 @@
   width: min(var(--pf-card-max), 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 260px);
   gap: 36px 40px;
   align-items: start;
   padding: 32px 28px 36px;
@@ -118,14 +118,14 @@
     rgba(12, 33, 56, 0.03) 100%
   );
   border: 1px solid rgba(12, 33, 56, 0.1);
-  padding: 22px 20px 24px;
+  padding: 18px 16px 18px;
 }
 
 .metaPanelTitle {
   margin: 0 0 18px;
   padding-bottom: 14px;
   border-bottom: 2px solid #0c2138;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -163,7 +163,7 @@
 }
 
 .metaValue {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.45;
   font-weight: 600;
   color: rgba(11, 11, 15, 0.9);
@@ -181,8 +181,8 @@
   justify-content: center;
   gap: 8px;
   width: 100%;
-  min-height: 40px;
-  padding: 0 18px;
+  min-height: 38px;
+  padding: 0 16px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
@@ -216,8 +216,8 @@
 
 .paragraph {
   margin: 0;
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: 13px;
+  line-height: 1.68;
   color: rgba(11, 11, 15, 0.76);
 }
 
@@ -627,11 +627,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 0 24px;
+  min-height: 40px;
+  padding: 0 20px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
   text-decoration: none;
   background: #0c2138;
@@ -683,7 +683,7 @@
   }
 
   .paragraph {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .ctaBandActions {
