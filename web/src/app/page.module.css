@@ -368,7 +368,7 @@
 
 .section {
   width: 100%;
-  padding: 64px 18px;
+  padding: 88px 18px;
   background: #0b0b0f;
 }
 
@@ -378,8 +378,8 @@
 }
 
 .sectionNosotros {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .sectionBlue {
@@ -402,9 +402,9 @@
   animation: sectionBlueGradient 20s linear infinite;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   width: calc(100% - 36px);
-  margin: 80px auto 0;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin: 104px auto 0;
+  padding-top: 136px;
+  padding-bottom: 88px;
   border-radius: 40px;
   overflow: hidden;
 }
@@ -730,7 +730,7 @@
 
 .sectionPortfolio {
   width: 100%;
-  padding: 76px 18px 84px;
+  padding: 96px 18px 104px;
   margin-top: 0;
   background: linear-gradient(180deg, #fafdfe 0%, #ffffff 55%);
   border-top: 1px solid rgba(0, 82, 144, 0.06);
@@ -917,7 +917,7 @@
 
 .sectionContact {
   width: 100%;
-  padding: 80px 18px 86px;
+  padding: 104px 18px 110px;
   background: #f6f8fb;
   color: #0b0b0f;
   border-top: 1px solid rgba(12, 33, 56, 0.08);
