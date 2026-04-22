@@ -224,6 +224,11 @@
 }
 
 @media (max-width: 860px) {
+  .title {
+    font-size: clamp(30px, 7.2vw, 34px);
+    line-height: 1.12;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 20px;
