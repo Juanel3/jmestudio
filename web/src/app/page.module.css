@@ -7,7 +7,7 @@
 }
 
 .main {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .topBar {
@@ -298,7 +298,7 @@
 }
 
 .title {
-  font-size: clamp(36px, 4.6vw, 64px);
+  font-size: clamp(32px, 4.2vw, 56px);
   line-height: 1.08;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -308,7 +308,7 @@
 
 .subtitle {
   margin-top: 16px;
-  font-size: clamp(14px, 1.6vw, 18px);
+  font-size: clamp(13px, 1.4vw, 17px);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.82);
   max-width: 720px;
@@ -597,7 +597,7 @@
 
 .nosTitle {
   text-align: center;
-  font-size: clamp(30px, 3.6vw, 44px);
+  font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: rgba(11, 11, 15, 0.92);
@@ -653,7 +653,7 @@
 
 .servicesTitle {
   text-align: center;
-  font-size: clamp(30px, 3.6vw, 44px);
+  font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.95);
@@ -731,7 +731,7 @@
 .portfolioTitle {
   text-align: center;
   margin-top: 12px;
-  font-size: clamp(30px, 3.6vw, 44px);
+  font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: rgba(11, 11, 15, 0.92);
@@ -922,7 +922,7 @@
 }
 
 .contactTitle {
-  font-size: clamp(30px, 3.6vw, 44px);
+  font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: rgba(11, 11, 15, 0.92);
