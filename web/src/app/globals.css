@@ -10,7 +10,6 @@ html {
   height: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-size: 16px;
 }
 
 html,
@@ -25,7 +24,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 16px;
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-poppins), system-ui, -apple-system, Segoe UI, Roboto,
