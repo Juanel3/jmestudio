@@ -1,0 +1,23 @@
+{
+  "name": "jmestudio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm --workspace api run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build": "npm --workspace web run build",
+    "start": "concurrently -n api,web -c blue,green \"npm --workspace api run start\" \"npm --workspace web run start\""
+  },
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

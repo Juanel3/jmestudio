@@ -1,0 +1,235 @@
+.page {
+  --pf-pad-x: clamp(20px, 4.5vw, 36px);
+  --pf-gap-lg: clamp(28px, 5vw, 44px);
+  --pf-gap-md: clamp(18px, 3vw, 28px);
+  /* Hueco bajo la barra fija (app/page.module.css → .topBar + .nav). */
+  --pf-nav-clear: max(
+    11.5rem,
+    calc(60px + 44px + 2rem + env(safe-area-inset-top, 0px))
+  );
+  --pf-top-breath: clamp(10px, 2vw, 22px);
+
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  color: #0b0b0f;
+  background: #ffffff;
+  padding-top: 165px;
+  padding-top: calc(var(--pf-nav-clear) + var(--pf-top-breath));
+  padding-bottom: clamp(40px, 8vw, 64px);
+}
+
+@media (max-width: 860px) {
+  .page {
+    --pf-nav-clear: max(
+      10rem,
+      calc(max(22px, env(safe-area-inset-top, 0px)) + 108px)
+    );
+  }
+}
+
+@media (max-width: 520px) {
+  .page {
+    --pf-nav-clear: max(
+      9rem,
+      calc(max(20px, env(safe-area-inset-top, 0px)) + 94px)
+    );
+  }
+}
+
+/* Un solo contenedor para título y rejilla (evita desalineos por width vs max-width). */
+.pfShell {
+  box-sizing: border-box;
+  max-width: 1120px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: max(var(--pf-pad-x), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--pf-pad-x), env(safe-area-inset-right, 0px));
+}
+
+.portfolioMain {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pageIntro {
+  margin-bottom: clamp(28px, 4.5vw, 40px);
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  color: rgba(11, 11, 15, 0.92);
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 560px;
+  text-align: center;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.65;
+  font-weight: 500;
+  color: rgba(11, 11, 15, 0.62);
+}
+
+.pageIntro .lead {
+  margin-top: clamp(12px, 2vw, 18px);
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.card {
+  display: block;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #0b0b0f;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.18);
+}
+
+.card:focus-visible {
+  outline: 2px solid #0c2138;
+  outline-offset: 4px;
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  max-height: 480px;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 38%,
+    rgba(0, 0, 0, 0.55) 78%,
+    rgba(0, 0, 0, 0.82) 100%
+  );
+}
+
+.blur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 48%;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  mask-image: linear-gradient(to top, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  padding: 22px 20px 20px;
+  text-align: left;
+}
+
+.captionText {
+  min-width: 0;
+  padding-right: 8px;
+}
+
+.cardTitle {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.cardDesc {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+
+.viewBtn {
+  align-self: flex-end;
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-top: 4px;
+  border-radius: 50%;
+  color: #0c2138;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.card:hover .viewBtn {
+  background: #ffffff;
+  transform: translateX(3px);
+}
+
+.viewBtnArrow {
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .media {
+    max-height: 420px;
+  }
+}

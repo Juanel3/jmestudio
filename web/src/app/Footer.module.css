@@ -1,0 +1,137 @@
+.inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 22px 0 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: linear-gradient(180deg, #0c2138 0%, #061018 100%);
+  color: rgba(255, 255, 255, 0.88);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerInner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px 16px;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footerCol:first-child {
+  justify-self: start;
+}
+
+.footerBrand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerLogoWrap {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  filter: brightness(0) invert(1);
+}
+
+.footerCol:nth-child(2) {
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLogo {
+  display: block;
+  width: 108px;
+  max-width: min(108px, 78vw);
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+.footerHeading {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 14px;
+}
+
+.footerLinks a {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 0.15s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  color: #7eb8e8;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 14px max(12px, env(safe-area-inset-bottom, 0px));
+  text-align: center;
+}
+
+.footerCopy {
+  font-size: 11px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 860px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: center;
+    padding-bottom: 14px;
+  }
+
+  .footerCol:first-child,
+  .footerCol:nth-child(2) {
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footerLinks {
+    gap: 6px 12px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .footerLinks a {
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .footerLogo {
+    max-width: min(108px, 85vw);
+  }
+}
