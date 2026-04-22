@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "JMEstudio",
+  title: "JM Estudio",
   description: "Diseño y desarrollo web, apps y sistemas.",
 };
 
