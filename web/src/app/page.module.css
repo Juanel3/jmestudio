@@ -324,11 +324,11 @@
 
 .primaryBtn,
 .ghostBtn {
-  height: 54px;
-  padding: 0 34px;
+  height: 46px;
+  padding: 0 26px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
