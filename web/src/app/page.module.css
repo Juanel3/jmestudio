@@ -7,7 +7,7 @@
 }
 
 .main {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .topBar {
@@ -360,7 +360,7 @@
 
 .section {
   width: 100%;
-  padding: 76px 18px;
+  padding: 64px 18px;
   background: #0b0b0f;
 }
 
@@ -370,8 +370,8 @@
 }
 
 .sectionNosotros {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .sectionBlue {
@@ -722,7 +722,7 @@
 
 .sectionPortfolio {
   width: 100%;
-  padding: 88px 18px 96px;
+  padding: 76px 18px 84px;
   margin-top: 0;
   background: linear-gradient(180deg, #fafdfe 0%, #ffffff 55%);
   border-top: 1px solid rgba(0, 82, 144, 0.06);
@@ -909,7 +909,7 @@
 
 .sectionContact {
   width: 100%;
-  padding: 96px 18px 100px;
+  padding: 80px 18px 86px;
   background: #f6f8fb;
   color: #0b0b0f;
   border-top: 1px solid rgba(12, 33, 56, 0.08);
