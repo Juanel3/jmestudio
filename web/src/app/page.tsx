@@ -11,7 +11,7 @@ export default function Home() {
     <div className={styles.page}>
       <HomeHeader />
 
-      <main>
+      <main className={styles.main}>
         <section id="inicio" className={styles.hero}>
         <div className={styles.heroMedia} aria-hidden="true">
           <Image
