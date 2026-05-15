@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .next",
     "dev": "next dev --webpack",
+    "dev:clean": "npm run clean && next dev --webpack",
     "dev:turbo": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "favicons": "node scripts/generate-favicons.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.2.1",
@@ -21,7 +22,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
-    "to-ico": "^1.1.5",
     "typescript": "^5"
   }
 }

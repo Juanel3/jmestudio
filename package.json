@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently -n api,web -c blue,green \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:clean": "npm run clean:web && npm run dev",
+    "clean:web": "npm --workspace web run clean",
     "dev:api": "npm --workspace api run dev",
     "dev:web": "npm --workspace web run dev",
     "build": "npm --workspace web run build",
