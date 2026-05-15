@@ -16,10 +16,10 @@ export function Footer() {
           >
             <span className={styles.footerLogoWrap}>
               <Image
-                src="/negociolog.svg"
+                src="/jm%20logo.svg"
                 alt=""
-                width={108}
-                height={61}
+                width={94}
+                height={79}
                 className={styles.footerLogo}
                 unoptimized
                 aria-hidden

@@ -61,10 +61,10 @@ export function HomeHeader({ variant = "home" }: HomeHeaderProps) {
             aria-label="JM Estudio, inicio"
           >
             <Image
-              src="/negociolog.svg"
+              src="/jm%20logo.svg"
               alt=""
-              width={320}
-              height={181}
+              width={94}
+              height={79}
               className={styles.mobileBarLogoImg}
               priority
               aria-hidden
@@ -119,10 +119,10 @@ export function HomeHeader({ variant = "home" }: HomeHeaderProps) {
           aria-label="JM Estudio, inicio"
         >
           <Image
-            src="/negociolog.svg"
+            src="/jm%20logo.svg"
             alt=""
-            width={200}
-            height={114}
+            width={94}
+            height={79}
             className={styles.navLogoImg}
             priority
             aria-hidden
