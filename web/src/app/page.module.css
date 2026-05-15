@@ -37,11 +37,9 @@
   background: rgba(10, 12, 16, 0.42);
   background-color: rgba(10, 12, 16, 0.42);
   border: 1px solid var(--glass-border);
-  backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
-  will-change: backdrop-filter;
-  isolation: isolate;
-  transform: translateZ(0);
+  backdrop-filter: saturate(160%) blur(14px);
+  /* Sin isolation/will-change/transform: en Chrome prod pueden romper el “vidrio” */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   justify-self: center;
   pointer-events: auto;
@@ -91,7 +89,6 @@
   margin-left: auto;
   margin-right: auto;
   pointer-events: auto;
-  isolation: isolate;
   z-index: 2;
 }
 
@@ -108,11 +105,9 @@
   background: rgba(10, 12, 16, 0.42);
   background-color: rgba(10, 12, 16, 0.42);
   border: 1px solid var(--glass-border);
-  backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
-  will-change: backdrop-filter;
-  isolation: isolate;
-  transform: translateZ(0);
+  backdrop-filter: saturate(160%) blur(14px);
+  /* Sin isolation/will-change/transform: en Chrome prod pueden romper el “vidrio” */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   pointer-events: auto;
 }
@@ -280,7 +275,7 @@
   inset: 0;
   border-radius: inherit;
   object-fit: cover;
-  filter: saturate(1.05) contrast(1.03);
+  /* Evitar filter aquí: en Chrome rompe backdrop-filter de la nav fija encima */
 }
 
 .heroOverlay {
